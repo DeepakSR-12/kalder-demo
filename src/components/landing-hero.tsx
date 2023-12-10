@@ -8,13 +8,12 @@ export const LandingHero = () => {
   const { isSignedIn } = useAuth();
 
   return (
-    <div className="text-white font-bold py-24 text-center space-y-5">
+    <div className="text-white font-bold mt-28 py-24 text-center space-y-8">
       <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl space-y-5 font-extrabold">
         <h1>Customer Loyalty Management</h1>
       </div>
-      <div className="text-sm md:text-xl font-light text-zinc-400">
-        Experience the future of interactive{" "}
-        <span className="font-bold">Brand Loyalty</span>
+      <div className="text-sm md:text-xl font-light text-zinc-400 mt-8">
+        Experience the Future of Interactive Brand Loyalty
       </div>
       <div>
         <Link href={isSignedIn ? "/overview" : "/sign-up"}>

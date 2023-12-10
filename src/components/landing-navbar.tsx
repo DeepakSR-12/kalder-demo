@@ -13,11 +13,11 @@ export const LandingNavbar = () => {
   const router = useRouter();
 
   return (
-    <nav className="p-4 bg-transparent flex items-center justify-between">
+    <nav className="p-4 mt-5 bg-transparent flex items-center justify-between">
       <Link href="/" className="flex items-center">
         <div
           onClick={() => router.push("/overview")}
-          className="relative h-8 w-8 mr-2 border flex justify-center items-center rounded-full border-white text-white"
+          className="relative h-8 w-8 mr-2 border flex justify-center items-center rounded-full border-white bg-black text-white"
         >
           KA
         </div>

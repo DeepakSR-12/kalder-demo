@@ -9,7 +9,7 @@ const LandingPage = () => {
         <LandingHero />
       </div>
 
-      <div className="text-white font-bold pb-72">POWERED BY Kalder</div>
+      <div className="text-white font-bold pb-20">Powered by Kalder</div>
     </div>
   );
 };

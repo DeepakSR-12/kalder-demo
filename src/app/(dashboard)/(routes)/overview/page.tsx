@@ -289,7 +289,7 @@ function Overview() {
           </div>
         </TabsContent>
         <TabsContent value="manage">
-          <div className="p-10">
+          <div className="p-6 md:p-10">
             <div>
               <div className="text-2xl font-medium">Member Management</div>
               <div className="font-light tracking-wide mt-2">

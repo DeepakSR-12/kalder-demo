@@ -17,7 +17,7 @@ export default function Conversion(props: { [x: string]: any }) {
   );
   return (
     <Card
-      className="rounded-2xl border-none bg-white p-6 shadow-xl w-full max-w-[300px] lg:max-w-none"
+      className="rounded-2xl border-none bg-white p-6 shadow-xl w-full max-w-[260px] lg:max-w-none"
       p="20px"
       alignItems="center"
       flexDirection="column"
@@ -79,7 +79,7 @@ export default function Conversion(props: { [x: string]: any }) {
             63%
           </Text>
         </Flex>
-        <VSeparator mx={{ base: "60px", xl: "60px", "2xl": "60px" }} />
+        <VSeparator mx={{ base: "20px", xl: "20px", "2xl": "20px" }} />
         <Flex direction="column" py="5px" me="10px">
           <Flex align="center">
             <Box h="8px" w="8px" bg="#6AD2FF" borderRadius="50%" me="4px" />

@@ -10,7 +10,7 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
         <Sidebar />
       </div>
       <main className="md:pl-80 w-full">
-        <div className="sticky top-0 mt-1 z-10 h-16 flex items-center justify-end bg-white shadow-slate-200 shadow-lg rounded-xl mx-4">
+        <div className="sticky top-0 mt-1 z-10 h-16 bg-white shadow-slate-200 shadow-lg rounded-xl mx-4">
           <Navbar />
         </div>
 

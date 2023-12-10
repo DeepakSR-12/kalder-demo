@@ -10,12 +10,10 @@ import {
   Star,
   MessageSquare,
 } from "lucide-react";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 import { cn } from "@/lib/utils";
 import { useUser } from "@clerk/nextjs";
-
-const poppins = Montserrat({ weight: "600", subsets: ["latin"] });
 
 const routes = [
   {
@@ -59,32 +57,11 @@ const routes = [
 
 export const Sidebar = () => {
   const pathname = usePathname();
-  const router = useRouter();
   const user = useUser();
 
   return (
     <div className="space-y-4 py-4 flex flex-col h-full bg-white shadow-xl text-black">
-      <div className="px-6 py-2 flex-1">
-        <Link
-          href="/"
-          className="flex items-center pl-3 mb-14 group cursor-pointer"
-        >
-          <div
-            onClick={() => router.push("/overview")}
-            className="relative h-8 w-8 mr-2 border-2 flex justify-center items-center rounded-full border-black text-black font-bold"
-          >
-            KA
-          </div>
-          <h1
-            className={cn(
-              "text-2xl font-bold flex items-center space-x-2",
-              poppins.className
-            )}
-          >
-            <div>Kalder</div>
-          </h1>
-        </Link>
-
+      <div className="px-6 py-2 mt-16 flex-1">
         <Link
           className="text-2xl font-bold uppercase tracking-widest text-center w-full block pb-8"
           href="/overview"
