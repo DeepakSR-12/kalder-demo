@@ -43,16 +43,6 @@ const LineChart: React.FC<LineChartProps> = ({ data }) => {
         display: true,
       },
     },
-    scales: {
-      x: {
-        time: {
-          unit: "day",
-        },
-      },
-      y: {
-        beginAtZero: true,
-      },
-    },
   };
 
   return <Line data={data} options={options} />;
